@@ -93,10 +93,10 @@ svm.fit(X_train_vec, y_train)
 svm_y_pred = svm.predict(X_test_vec)
 print(classification_report(y_test, svm_y_pred))
 
-with open('svm.pkl', 'wb') as file:
+with open("resources/svm.pkl", 'wb') as file:
     pickle.dump(svm, file)
 
-with open('vectorizer.pkl', 'wb') as file:
+with open("resources/vectorizer.pkl", 'wb') as file:
     pickle.dump(vectorizer, file)
 
 
