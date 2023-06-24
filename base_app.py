@@ -51,9 +51,9 @@ def main():
 
 	# Building out the "Information" page
 	if selection == "Information":
-		st.info("General Information")
+		st.info("Raw data")
 		# You can read a markdown file from supporting resources folder
-		st.markdown("Some information here")
+		
 
 		st.subheader("Raw Twitter data and label")
 		if st.checkbox('Show raw data'): # data is hidden if box is unchecked
@@ -61,7 +61,7 @@ def main():
 
 	# Building out the predication page
 	if selection == "Prediction":
-		st.info("Prediction using support vector machine")
+		st.info("Prediction using Support Vector Machine")
 		# Creating a text box for user input
 		tweet_text = st.text_area("Enter Text","Type Here")
 
